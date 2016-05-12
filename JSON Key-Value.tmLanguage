@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>JSON Key-Value</string>
+    <key>scopeName</key>
+    <string>source.json</string>
+    <key>fileTypes</key>
+    <array>
+        <string>json</string>
+    </array>
+    <key>uuid</key>
+    <string>4e5a820c-0650-4de9-b793-201999eeeb4f</string>
+
+    <key>patterns</key>
+    <array>
+        <dict>
+            <key>match</key>
+            <string>//.*</string>
+            <key>name</key>
+            <string>comment.single.line.sublime-settings</string>
+        </dict>
+        <dict>
+            <key>begin</key>
+            <string>/\*</string>
+            <key>end</key>
+            <string>\*/</string>
+            <key>name</key>
+            <string>comment.block.sublime-settings</string>
+        </dict>
+        <dict>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>keyword.other.name.sublime-settings</string>
+                </dict>
+            </dict>
+            <key>match</key>
+            <string>"(?i)([a-z0-9_.*-]+)"\s*?:</string>
+        </dict>
+        <dict>
+            <key>include</key>
+            <string>source.jsongenericarrayelements</string>
+        </dict>
+    </array>
+</dict>
+</plist>
