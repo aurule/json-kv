@@ -1,0 +1,4 @@
+JSON Key-Value 1.0.1
+--------------------
+
+* Refactored to stop relying on PackageDev
