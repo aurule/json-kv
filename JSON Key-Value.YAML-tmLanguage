@@ -10,23 +10,30 @@ patterns:
 - comment: Single-line comment
   match: //.*
   name: comment.single.line.jsonkv
-- begin: /\*
+- comment: Multi-line comment
+  begin: /\*
   end: \*/
   name: comment.block.jsonkv
-- match: '"(?i)([a-z0-9_.*-]+)"\s*?:'
+- comment: Key names
+  match: '"(?i)([a-z0-9_.*-]+)"\s*?:'
   captures:
     '1':
       name: keyword.other.name.jsonkv
-- name: string.quoted.jsonkv
+- comment: String values
+  name: string.quoted.jsonkv
   begin: "\""
   end: "\""
   patterns:
-    - name: constant.character.escape.jsonkv
-      match: \\[tnr"]
-- name: constant.numeric.jsonkv
+  - comment: Escape characters
+    name: constant.character.escape.jsonkv
+    match: \\[tnr"]
+- comment: Numeric values
+  name: constant.numeric.jsonkv
   match: '\d+(?:.\d+)?'
-- name: constant.language.boolean.jsonkv
+- comment: Boolean values
+  name: constant.language.boolean.jsonkv
   match: 'true|false'
-- name: constant.language.null.jsonkv
+- comment: Null value
+  name: constant.language.null.jsonkv
   match: 'null'
 ...

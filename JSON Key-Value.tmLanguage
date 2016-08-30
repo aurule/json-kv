@@ -21,6 +21,8 @@
 		<dict>
 			<key>begin</key>
 			<string>/\*</string>
+			<key>comment</key>
+			<string>Multi-line comment</string>
 			<key>end</key>
 			<string>\*/</string>
 			<key>name</key>
@@ -35,12 +37,16 @@
 					<string>keyword.other.name.jsonkv</string>
 				</dict>
 			</dict>
+			<key>comment</key>
+			<string>Key names</string>
 			<key>match</key>
 			<string>"(?i)([a-z0-9_.*-]+)"\s*?:</string>
 		</dict>
 		<dict>
 			<key>begin</key>
 			<string>"</string>
+			<key>comment</key>
+			<string>String values</string>
 			<key>end</key>
 			<string>"</string>
 			<key>name</key>
@@ -48,6 +54,8 @@
 			<key>patterns</key>
 			<array>
 				<dict>
+					<key>comment</key>
+					<string>Escape characters</string>
 					<key>match</key>
 					<string>\\[tnr"]</string>
 					<key>name</key>
@@ -56,18 +64,24 @@
 			</array>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>Numeric values</string>
 			<key>match</key>
 			<string>\d+(?:.\d+)?</string>
 			<key>name</key>
 			<string>constant.numeric.jsonkv</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>Boolean values</string>
 			<key>match</key>
 			<string>true|false</string>
 			<key>name</key>
 			<string>constant.language.boolean.jsonkv</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>Null value</string>
 			<key>match</key>
 			<string>null</string>
 			<key>name</key>
