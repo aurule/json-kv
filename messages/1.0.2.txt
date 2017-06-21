@@ -1,0 +1,4 @@
+JSON Key-Value 1.0.2
+--------------------
+
+* Added comments to the syntax file and reordered some keys
