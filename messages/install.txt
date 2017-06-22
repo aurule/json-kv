@@ -1,3 +1,5 @@
 # JSON Key-Value Installed
 
 Thanks for installing! Enjoy!
+
+To use, select the `JSON Key-Value` syntax when editing a json file.
