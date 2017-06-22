@@ -9,3 +9,7 @@ Provides better syntax highlighting for JSON documents. This package adds a new 
 The best way to install JSON Key-Value is through [Package Manager](https://packagecontrol.io/). 
 
 Alternatively, you can download the latest code into your Sublime Text `Packages` directory, either by cloning the repository or by downloading the [latest release](https://github.com/aurule/json-kv/releases).
+
+## Compatability
+
+JSON Key-Value is compatable with Sublime Text 2 and 3, and the tmLanguage file can be used with any editor which supports that format.
