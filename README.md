@@ -1,6 +1,8 @@
 # JSON Key-Value
 
-Provides better syntax highlighting for JSON documents. This package adds a new syntax definition for JSON which highlights keys and values with different data types:
+Provides better syntax highlighting for JSON documents. This package adds a new syntax definition for JSON which highlights keys and values to make them easier to tell apart:
+
+![Highlighting example](https://i.imgur.com/P6fk9dR.png "Simple json snippet showing different highlights")
 
 ## Installation
 
