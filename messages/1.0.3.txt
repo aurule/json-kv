@@ -1,0 +1,5 @@
+JSON Key-Value 1.0.3
+--------------------
+
+* Allow key names to contain arbitrary characters
+* Updated readme with a screenshot

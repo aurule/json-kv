@@ -40,7 +40,7 @@
 			<key>comment</key>
 			<string>Key names</string>
 			<key>match</key>
-			<string>"(?i)([a-z0-9_.*-]+)"\s*?:</string>
+			<string>"(?i)([^\"]+)"\s*?:</string>
 		</dict>
 		<dict>
 			<key>begin</key>

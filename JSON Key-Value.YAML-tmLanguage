@@ -15,7 +15,7 @@ patterns:
   end: \*/
   name: comment.block.jsonkv
 - comment: Key names
-  match: '"(?i)([a-z0-9_.*-]+)"\s*?:'
+  match: '"(?i)([^\"]+)"\s*?:'
   captures:
     '1':
       name: keyword.other.name.jsonkv
