@@ -1,0 +1,5 @@
+JSON Key-Value 1.0.4
+--------------------
+
+* Highlight colon separator
+* Use standard `json` sufix for all scopes. This should fix any odd behavior with tools that rely on exact scope names.

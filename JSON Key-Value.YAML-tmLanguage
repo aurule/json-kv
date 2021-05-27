@@ -9,31 +9,33 @@ fileTypes:
 patterns:
 - comment: Single-line comment
   match: //.*
-  name: comment.single.line.jsonkv
+  name: comment.single.line.json
 - comment: Multi-line comment
   begin: /\*
   end: \*/
-  name: comment.block.jsonkv
+  name: comment.block.json
 - comment: Key names
-  match: '"(?i)([^\"]+)"\s*?:'
+  match: '"(?i)([^\"]+)"\s*?(:)'
   captures:
     '1':
-      name: keyword.other.name.jsonkv
+      name: keyword.other.name.json
+    '2':
+      name: punctuation.separator.mapping.key-value.json
 - comment: String values
-  name: string.quoted.jsonkv
+  name: string.quoted.json
   begin: "\""
   end: "\""
   patterns:
   - comment: Escape characters
-    name: constant.character.escape.jsonkv
+    name: constant.character.escape.json
     match: \\[tnr"]
 - comment: Numeric values
-  name: constant.numeric.jsonkv
+  name: constant.numeric.json
   match: '\d+(?:.\d+)?'
 - comment: Boolean values
-  name: constant.language.boolean.jsonkv
+  name: constant.language.boolean.json
   match: 'true|false'
 - comment: Null value
-  name: constant.language.null.jsonkv
+  name: constant.language.null.json
   match: 'null'
 ...

@@ -16,7 +16,7 @@
 			<key>match</key>
 			<string>//.*</string>
 			<key>name</key>
-			<string>comment.single.line.jsonkv</string>
+			<string>comment.single.line.json</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -26,7 +26,7 @@
 			<key>end</key>
 			<string>\*/</string>
 			<key>name</key>
-			<string>comment.block.jsonkv</string>
+			<string>comment.block.json</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -34,13 +34,18 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.other.name.jsonkv</string>
+					<string>keyword.other.name.json</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.separator.mapping.key-value.json</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>Key names</string>
 			<key>match</key>
-			<string>"(?i)([^\"]+)"\s*?:</string>
+			<string>"(?i)([^\"]+)"\s*?(:)</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -50,7 +55,7 @@
 			<key>end</key>
 			<string>"</string>
 			<key>name</key>
-			<string>string.quoted.jsonkv</string>
+			<string>string.quoted.json</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -59,7 +64,7 @@
 					<key>match</key>
 					<string>\\[tnr"]</string>
 					<key>name</key>
-					<string>constant.character.escape.jsonkv</string>
+					<string>constant.character.escape.json</string>
 				</dict>
 			</array>
 		</dict>
@@ -69,7 +74,7 @@
 			<key>match</key>
 			<string>\d+(?:.\d+)?</string>
 			<key>name</key>
-			<string>constant.numeric.jsonkv</string>
+			<string>constant.numeric.json</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -77,7 +82,7 @@
 			<key>match</key>
 			<string>true|false</string>
 			<key>name</key>
-			<string>constant.language.boolean.jsonkv</string>
+			<string>constant.language.boolean.json</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -85,7 +90,7 @@
 			<key>match</key>
 			<string>null</string>
 			<key>name</key>
-			<string>constant.language.null.jsonkv</string>
+			<string>constant.language.null.json</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
