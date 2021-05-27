@@ -69,10 +69,18 @@
 			</array>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.separator.decimal.json</string>
+				</dict>
+			</dict>
 			<key>comment</key>
 			<string>Numeric values</string>
 			<key>match</key>
-			<string>\d+(?:.\d+)?</string>
+			<string>\d+(?:(.)\d+)?</string>
 			<key>name</key>
 			<string>constant.numeric.json</string>
 		</dict>

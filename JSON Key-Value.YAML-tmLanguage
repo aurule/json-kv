@@ -31,7 +31,10 @@ patterns:
     match: \\[tnr"]
 - comment: Numeric values
   name: constant.numeric.json
-  match: '\d+(?:.\d+)?'
+  match: '\d+(?:(.)\d+)?'
+  captures:
+    '1':
+      name: punctuation.separator.decimal.json
 - comment: Boolean values
   name: constant.language.boolean.json
   match: 'true|false'
