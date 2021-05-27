@@ -1,0 +1,27 @@
+# SYNTAX TEST "JSON Key-Value.tmLanguage"
+
+{
+    "key string": "string value",
+    #^^^^^^^^^^ keyword.other.name.json
+    #           ^ punctuation.separator.mapping.key-value.json
+    #             ^^^^^^^^^^^^^^ string.quoted.json
+    "key int": 1,
+    #          ^ constant.numeric.json
+    "key float": 5.25,
+    #            ^^^^ constant.numeric.json
+    #             ^ constant.numeric.json punctuation.separator.decimal.json
+    {
+        "nested object": "check"
+    },
+    [
+        "nested list",
+        #^^^^^^^^^^^^ string.quoted.json
+        "list item two"
+    ]
+    // single-line comment
+    #^^^^^^^^^^^^^^^^^^^^^ comment.single.line.json
+    /*
+        multi line comment
+        #^^^^^^^^^^^^^^^^^^ comment.block.json
+     */
+}
